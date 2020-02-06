@@ -1,7 +1,10 @@
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/city.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('../images/city.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
+  font-size: 62.5%;
 }
 body .wrapper .content {
   display: flex;
@@ -9,16 +12,26 @@ body .wrapper .content {
   align-items: center;
   height: 100%;
 }
+body .wrapper .content .left {
+  display: flex;
+  justify-content: flex-end;
+}
 body .wrapper .content .left,
 body .wrapper .content .right {
   width: 50%;
 }
 body .wrapper .content .left .text-container,
 body .wrapper .content .right .text-container {
-  width: 200px;
+  width: 350px;
+  margin-bottom: 100px;
+}
+body .wrapper .content .left .text-container p,
+body .wrapper .content .right .text-container p {
+  font-size: 1rem;
 }
 body .wrapper .content .left img,
 body .wrapper .content .right img {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
+  margin: 100px 0 0 50px;
 }

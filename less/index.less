@@ -1,7 +1,10 @@
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/city.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('../images/city.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
+    font-size: 62.5%;
 
     .wrapper {
 
@@ -11,16 +14,28 @@ body {
             align-items: center;
             height: 100%;
 
+            .left {
+                display: flex;
+                justify-content: flex-end;
+            } 
+
             .left, .right {
                 width: 50%;
 
+               
                 .text-container {
-                    width: 200px;
+                    width: 350px;
+                    margin-bottom: 100px;
+
+                    p {
+                        font-size: 1rem;
+                    }
                 }
 
                 img {
-                    width: 250px;
-                    height: 250px;
+                    width: 350px;
+                    height: 350px;
+                    margin: 100px 0 0 50px;
                 }
             }
             
