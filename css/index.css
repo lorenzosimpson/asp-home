@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../images/city.jpg');
+  background-size: cover;
+  color: white;
+}
+body .wrapper .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body .wrapper .content .left,
+body .wrapper .content .right {
+  width: 50%;
+}
+body .wrapper .content .left .text-container,
+body .wrapper .content .right .text-container {
+  width: 200px;
+}
+body .wrapper .content .left img,
+body .wrapper .content .right img {
+  width: 250px;
+  height: 250px;
+}
