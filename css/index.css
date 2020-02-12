@@ -14,11 +14,14 @@ body {
   font-size: 62.5%;
   font-family: 'Avenir Next', 'Nunito', sans-serif;
 }
+body .wrapper {
+  min-height: 500px;
+}
 body .wrapper .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 750px;
+  height: 95vh;
 }
 body .wrapper .content .left {
   display: flex;
@@ -47,14 +50,13 @@ body .wrapper footer {
   display: flex;
   justify-content: center;
   z-index: -1;
-  margin-top: 15px;
 }
 body .wrapper footer p {
   margin: 0 auto;
 }
 @media screen and (max-width: 800px) {
   .content {
-    min-height: auto;
+    height: auto;
     display: flex;
     flex-direction: column-reverse;
   }
