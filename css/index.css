@@ -13,12 +13,14 @@ body {
   color: white;
   font-size: 62.5%;
   font-family: 'Avenir Next', 'Nunito', sans-serif;
+  margin: 0;
 }
 body .wrapper {
   min-height: 500px;
 }
 body .wrapper .content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   height: 95vh;
@@ -49,7 +51,9 @@ body .wrapper .content .right img {
 body .wrapper footer {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   z-index: -1;
+  text-align: center;
 }
 body .wrapper footer p {
   margin: 0 auto;
